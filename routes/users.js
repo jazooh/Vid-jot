@@ -64,6 +64,7 @@ router.post('/register', (req, res) => {
             bcrypt.hash(newUser.password, salt, (err, hash) => {
               if (err) throw err;
               newUser.password = hash;
+              console.log(newUser)
               newUser.save()
                 .then(user => {
                   req.flash('success_msg', 'You are now registered and can log in');
