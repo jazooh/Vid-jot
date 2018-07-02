@@ -10,6 +10,9 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+console.log( process.env.PATH );
+console.log(process.env.NODE_ENV);
+
 // Load routes
 const ideas = require('./routes/ideas');
 const users = require('./routes/users');
@@ -84,6 +87,7 @@ app.use('/ideas', ideas);
 app.use('/users', users);
 
 const port = process.env.PORT || 5000;
+
 
 app.listen(port, () =>{
   console.log(`Server started on port ${port}`);
