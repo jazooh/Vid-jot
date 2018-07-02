@@ -1,7 +1,7 @@
 if (process.env.NODE_ENV === 'production') {
   module.exports = {
     mongoURI:
-      'mongodb://jazooh:TREster50&@ds223161.mlab.com:23161/vidjot-ngacha'
+      'mongodb://jazooh:TREster50&@ds125211.mlab.com:25211/dbngacha'
   }
 
 } else {
