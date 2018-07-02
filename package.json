@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "App to create video ideas",
   "main": "app.js",
+  "engines": {
+    "node": "6.11.4"
+  },
   "scripts": {
     "start": " nodemon app.js"
   },
